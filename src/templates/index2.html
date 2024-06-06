@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style="background-color:#000080;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #000081;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            
+        }
+        pa{
+            color:#000081;
+        }
+        </style>
+    
+</head>
+<body  >
+	<header>
+        <h1>SMART VISUAL CONTROL OF EMERGENCY VEHICLE</h1>
+    </header>
+     <main>
+        <section class="prediction-form">
+    <table>
+    <tr>
+        <td>
+    <a align="center" >cam 1</a>
+    
+        </td>
+        <td>
+            <a align="center" >cam 2</a>
+            
+            
+            </td>
+    </tr>
+    <tr>
+    
+    <td>
+        <img src="{{ url_for('video_feed') }}" width="180" height="180" />
+            </td>
+    <td>
+    <img src="videos/abc.mp4" width="180" height="180" />
+    </td>
+</tr>
+<tr>
+    <td>
+    <a align="center" >cam 3</a>
+    </td>
+    <td>
+        <a align="center" >cam 4</a>
+        </td>
+</tr>
+<tr>
+    
+    <td>
+        <img src="videos/abc.mp4" width="180" height="180" />
+        </td>
+    <td>
+    <img src="videos/abc.mp4" width="180" height="180" />
+    </td>
+</tr>
+</section>
+<section class="result">
+{% if status_message %}
+<p id="flash-message" style="color:#BA0600;"> Road-1 </p>
+{% else %}
+<p style="color:#000080;">No ambulance detected</p>
+{% endif %}
+</section>
+</main>
+<script>
+    // Use JavaScript to handle the flashing message
+    var flashMessageElement = document.getElementById('flash-message');
+
+    // You may use WebSocket or other mechanisms to handle real-time updates
+    // For simplicity, let's simulate a flash message when an ambulance is detected
+    setInterval(function () {
+        
+        flashMessageElement.innerHTML = "Ambulance detected! on Road-1";
+        setTimeout(function () {
+            flashMessageElement.innerHTML = "";
+        }, 9000);  // Flash message duration (in milliseconds)
+    }, 0); 
+    setInterval(function() {
+        window.location.reload();
+    }, 7200);  // Interval to check for ambulance detection (in milliseconds)
+</script>
+</body>
+</html>
