@@ -30,10 +30,6 @@ smart-visual-control-emergency-vehicle/
 ├── notebooks/
 │   ├── model_training.ipynb   
 │
-├── src/
-│   ├── data_processing.py
-│   ├── app.py
-│   ├── last.pt
 │
 ├── tests/
 │   ├── test_data_processing.py
