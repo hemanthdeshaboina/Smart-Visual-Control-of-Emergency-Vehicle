@@ -28,17 +28,18 @@ smart-visual-control-emergency-vehicle/
 │   └── trained_model/
 │
 ├── notebooks/
-│   ├── model_training.ipynb   
+│   ├── data_preprocessing.ipynb
+│   ├── model_training.ipynb
 │
-│
-├── tests/
-│   ├── test_data_processing.py
-│   ├── test_train.py
-│   └── test_evaluate.py
+├── src/
+│   ├── data_processing.py
+│   ├── last.pt
+│   ├── app.py
 │
 ├── README.md
 ├── requirements.txt
 └── LICENSE
+
 
 III. Installation
 To get started, clone the repository and install the necessary dependencies:
