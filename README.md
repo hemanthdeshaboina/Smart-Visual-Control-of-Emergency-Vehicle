@@ -1,17 +1,7 @@
 Smart Visual Control of Emergency Vehicle Using YOLO Model
 
-Table of Contents
-1. Introduction
-2. Project Structure
-3. Installation
-4. Usage
-5. Training the Model
-6. Evaluation
-7. Contributing
-8. License
-9. Acknowledgements
-    
-I. Introduction
+
+I. Introduction                                                                                                                                               
     The "Smart Visual Control of Emergency Vehicle using YOLO Model" project aims to develop a system for detecting and managing emergency vehicles in real-time traffic scenarios. Using the YOLO (You Only Look Once) object detection model, the system can identify emergency vehicles such as ambulances, fire trucks, and police cars, and implement control measures to facilitate their swift movement through traffic.
 
 II. Project Structure
