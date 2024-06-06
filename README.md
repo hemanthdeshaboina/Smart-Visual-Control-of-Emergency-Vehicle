@@ -16,29 +16,29 @@ I. Introduction
 
 II. Project Structure
     The project is structured as follows:
-smart-visual-control-emergency-vehicle/
-│
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── annotations/
-│
-├── models/
-│   ├── yolo/
-│   └── trained_model/
-│
-├── notebooks/
-│   ├── data_preprocessing.ipynb
-│   ├── model_training.ipynb
-│
-├── src/
-│   ├── data_processing.py
-│   ├── last.pt
-│   ├── app.py
-│
-├── README.md
-├── requirements.txt
-└── LICENSE
+smart-visual-control-emergency-vehicle/                                                                                                                       
+│                                                                                                                                                             
+├── data/                                                                                                                                                     
+│   ├── raw/                                                                                                                                         
+│   ├── processed/                                                                                                                                           
+│   └── annotations/                                                                                                                                          
+│                                                                                                                                                             
+├── models/                                                                                                                                                 
+│   ├── yolo/                                                                                                                                                 
+│   └── trained_model/                                                                                                                                        
+│                                                                                                                                                             
+├── notebooks/                                                                                                                                                
+│   ├── data_preprocessing.ipynb                                                                                                                              
+│   ├── model_training.ipynb                                                                                                                                  
+│                                                                                                                                                             
+├── src/                                                                                                                                                      
+│   ├── data_processing.py                                                                                                                                    
+│   ├── last.pt                                                                                                                                               
+│   ├── app.py                                                                                                                                                
+│                                                                                                                                                             
+├── README.md                                                                                                                                                 
+├── requirements.txt                                                                                                                                          
+└── LICENSE                                                                                                                                                   
 
 
 III. Installation
